@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from cvs.views import cv_es
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', cv_es)
 ]
