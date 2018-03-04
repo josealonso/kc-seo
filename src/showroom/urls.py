@@ -15,9 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from cvs.views import cv_es
+from cvs.views import cv_es, cv_en
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', cv_es)
+    path('', cv_es, name='cv_es'),
+    path('en/cv', cv_en, name='cv_en')
 ]
