@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -37,9 +38,7 @@
 	</script>
 
 	<link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700" rel="stylesheet">
-	<link rel="stylesheet" href="./styles/main.css">
-	<link rel="stylesheet" href="./styles/grid.css">
-	<link rel="stylesheet" href="./styles/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -230,43 +229,43 @@
 				</div>
 				<div class="skills-carousel">
 					<div class="img-container">
-						<img src="./logos/color/Vagrant.png" alt="Logo de Vagrant" title="Logo de Vagrant">
+						<img src="{% static 'color/Vagrant.png' %}" alt="Logo de Vagrant" title="Logo de Vagrant">
 					</div>
 					<div class="img-container">
-						<img src="./logos/color/apache.png" alt="Logo de Apache" title="Logo de Apache">
+						<img src="{% static 'color/apache.png' %}" alt="Logo de Apache" title="Logo de Apache">
 					</div>
 					<div class="img-container">
-						<img src="./logos/color/css3.png" alt="Logo de CSS3" title="Logo de CSS3">
+						<img src="{% static 'color/css3.png' %}" alt="Logo de CSS3" title="Logo de CSS3">
 					</div>
 					<div class="img-container">
-						<img src="./logos/color/docker.png" alt="Logo de Docker" title="Logo de Docker">
+						<img src="{% static 'color/docker.png' %}" alt="Logo de Docker" title="Logo de Docker">
 					</div>
 					<div class="img-container">
-						<img src="./logos/color/es.svg" alt="Logo de Elasticsearch" title="Logo de Elasticsearch">
+						<img src="{% static 'color/es.svg' %}" alt="Logo de Elasticsearch" title="Logo de Elasticsearch">
 					</div>
 					<div class="img-container">
-						<img src="./logos/color/html.png" alt="Logo de HTML5" title="Logo de HTML5">
+						<img src="{% static 'color/html.png' %}" alt="Logo de HTML5" title="Logo de HTML5">
 					</div>
 					<div class="img-container">
-						<img src="./logos/color/js.png" alt="Logo de Javascript" title="Logo de Javascript">
+						<img src="{% static 'color/js.png' %}" alt="Logo de Javascript" title="Logo de Javascript">
 					</div>
 					<div class="img-container">
-						<img src="./logos/color/kibana.png" alt="Logo de Kibana" title="Logo de Kibana">
+						<img src="{% static 'color/kibana.png' %}" alt="Logo de Kibana" title="Logo de Kibana">
 					</div>
 					<div class="img-container">
-						<img src="./logos/color/linux.png" alt="Logo de Linux" title="Logo de Linux">
+						<img src="{% static 'color/linux.png' %}" alt="Logo de Linux" title="Logo de Linux">
 					</div>
 					<div class="img-container">
-						<img src="./logos/color/mysql.png" alt="Logo de MySQL" title="Logo de MySQL">
+						<img src="{% static 'color/mysql.png' %}" alt="Logo de MySQL" title="Logo de MySQL">
 					</div>
 					<div class="img-container">
-						<img src="./logos/color/php-1.png" alt="Logo de PHP" title="Logo de PHP">
+						<img src="{% static 'color/php-1' %}.png" alt="Logo de PHP" title="Logo de PHP">
 					</div>
 					<div class="img-container">
-						<img src="./logos/color/py.png" alt="Logo de Python" title="Logo de Python">
+						<img src="{% static 'color/py.png' %}" alt="Logo de Python" title="Logo de Python">
 					</div>
 					<div class="img-container">
-						<img src="./logos/color/sf.png" alt="Logo de Symfony" title="Logo de Symfony">
+						<img src="{% static 'color/sf.png' %}" alt="Logo de Symfony" title="Logo de Symfony">
 					</div>
  				</div>
 			</div>
@@ -553,8 +552,5 @@
 	</main>
 
 </body>
-<script src="./js/jquery-3.2.1.js"></script>
-<script src="./js/menu.js"></script>
-<script src="./js/animation.js"></script>
-<script src="./js/validate.js"></script>
+<script src="{% static '../dist/bundle.js' %}"></script>
 </html>

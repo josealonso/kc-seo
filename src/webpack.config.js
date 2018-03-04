@@ -6,7 +6,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'), // we use resolve because we need an absolute path
         filename: 'bundle.js',
-        publicPath: '/dist'
+        publicPath: '/dist/'
     },
     module: {
         rules: [
@@ -18,8 +18,30 @@ module.exports = {
                     'css-loader' // this loader is applied first
                 ]
 
-            }
+            },
+            {
+                test: /\.(png|svg|jpe?g|gif)$/i,
+                use: [
+                  {
+                    loader: 'file-loader',
+                    options: {
+                        name: '[name].[ext]'
+                    }
+                  },
+                  {
+                    loader: 'image-webpack-loader',
+                    options: {
+                      bypassOnDebug: true,
+                    },
+                  }
+                ]
+            },
         ]
+    },
+    devServer: {
+        proxy: {
+          '/': 'http://127.0.0.1:8000'
+        }
     },
     plugins: [
         new webpack.ProvidePlugin({

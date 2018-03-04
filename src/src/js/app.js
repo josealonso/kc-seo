@@ -1,6 +1,8 @@
 import '../css/main.css';
 import '../css/grid.css';
-import '../css/font-awesome.min.css';
+
+// import '../css/font-awesome.min.css';
+
 
 import './menu';
 
