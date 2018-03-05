@@ -2,9 +2,11 @@ from django.shortcuts import render
 
 
 def cv_es(request):
-    context = {}
+    path = request.get_full_path()
+    context = { 'path' : path }
     return render(request, 'cv_es.html', context)
 
 def cv_en(request):
-    context = {}
+    path = request.get_full_path()
+    context = {'path': path}
     return render(request, 'cv_en.html', context)

@@ -8,6 +8,7 @@
 	<meta name="description" content="Python Django, Php Symfony, Desarrollador Web Full Stack. Otras tecnologías que uso: Docker, ElasticSearch, Kibana, Angular, React y más!.">
 	<link rel="canonical" href="https://luisrosales.info">
 	<link rel="alternate" hreflang="en" href="https://luisrosales.info/en/cv" />
+	{% include "twittercard.html" with path=path title="Python Django, PHP Symfony, Desarrollador Web Full Stack" description="Python Django, Php Symfony, Desarrollador Web Full Stack. Otras tecnologías que uso: Docker, ElasticSearch, Kibana, Angular, React y más!." %}
 	<script type="application/ld+json">
 		{
 		  "@context": "http://schema.org",
@@ -38,6 +39,7 @@
 	</script>
 
 	<link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700" rel="stylesheet">
+
 	{% include 'gtagtracker.html' %}
 </head>
 
@@ -53,7 +55,7 @@
 					&nbsp;
 					</div>
 					<div class="col-7 row-flex">
-						<h1 class="title">Python Django, PHP Symfony, Desarrollador Web Full Stack</h1>
+						<h1 class="title">Python Django, PHP Symfony, Desarrollador Web Full Stack {{ path }}</h1>
 
 				        <p class="title-cite title-flex-item">
 							Me considero un herrero digital, siempre orientado hacia los proyectos. Si empiezo algo me gusta ver el resultado final. También soy un emprendedor.
